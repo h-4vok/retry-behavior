@@ -8,26 +8,56 @@ namespace RetryBehavior
 {
     public static class RetryRunner
     {
-        public static void Run(Action closure, int retries = 3)
+        public static void Run(Action closure, int retries = 3, Func<bool?> retryCondition = null)
         {
-            RetryRunner.RunImpl(closure, retries, 0);
+            retryCondition = retryCondition ?? (() => null);
+
+            RunImpl(closure, retries, 1, retryCondition);
         }
 
-        private static void RunImpl(Action closure, int retries, int currentTries)
+        public static void RunImpl(Action closure, int retries, int currentTries, Func<bool?> retryCondition)
         {
+            void DoRetry()
+            {
+                currentTries++;
+                RunImpl(closure, retries, currentTries, retryCondition);
+            }
+
             try
             {
                 closure();
+
+                if (retryCondition() == true)
+                {
+                    DoRetry();
+                }
             }
             catch
             {
-                currentTries++;
-
-                if (currentTries == retries)
+                if (retries == 0 || retries == currentTries)
+                {
                     throw;
-
-                RunImpl(closure, retries, currentTries);
+                }
+                else
+                {
+                    DoRetry();
+                }
             }
+        }
+
+        public static T Run<T>(Func<T> closure, int retries = 3, Func<bool?> retryCondition = null)
+        {
+            T output = default(T);
+
+            Action internalClosure = () =>
+            {
+                output = closure();
+            };
+
+            retryCondition = retryCondition ?? (() => null);
+            RunImpl(internalClosure, retries, 1, retryCondition);
+
+            return output;
         }
     }
 }

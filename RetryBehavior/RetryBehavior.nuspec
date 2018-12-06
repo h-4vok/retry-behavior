@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Christian Guzman</authors>
+    <owners>Christian Guzman</owners>
+    <licenseUrl>https://github.com/cg-h4voK/retry-behavior</licenseUrl>
+    <projectUrl>https://github.com/cg-h4voK/retry-behavior</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/cg-h4voK/db-nostalgia-csharp/develop/DBNostalgia/DBNostalgia.nuget.icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple Retry mechanism for your closures.</description>
+    <releaseNotes>RetryBehavior Release 1.0.0.0</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>RetryBehavior Retry Try Try Again TryAgain Retrying Retries DBNostalgia DB Nostalgia ChristianG Christian Guzman</tags>
+  </metadata>
+</package>
