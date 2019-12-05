@@ -11,8 +11,7 @@
     <iconUrl>https://raw.githubusercontent.com/cg-h4voK/db-nostalgia-csharp/develop/DBNostalgia/DBNostalgia.nuget.icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple Retry mechanism for your closures.</description>
-    <releaseNotes>RetryBehavior Release 1.0.0.1</releaseNotes>
-    <copyright>Copyright 2018</copyright>
+    <releaseNotes>RetryBehavior Release 1.1.0.0</releaseNotes>
     <tags>RetryBehavior Retry Try Try Again TryAgain Retrying Retries DBNostalgia DB Nostalgia ChristianG Christian Guzman</tags>
   </metadata>
 </package>
