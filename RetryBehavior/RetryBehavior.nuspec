@@ -8,7 +8,7 @@
     <owners>Christian Guzman</owners>
     <licenseUrl>https://github.com/h-4voK/retry-behavior</licenseUrl>
     <projectUrl>https://github.com/h-4voK/retry-behavior</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/cg-h4voK/db-nostalgia-csharp/develop/DBNostalgia/DBNostalgia.nuget.icon.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/h-4vok/retry-behavior/master/retry-behavior.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple Retry mechanism for your closures.</description>
     <releaseNotes>RetryBehavior Release 1.1.0.0</releaseNotes>
