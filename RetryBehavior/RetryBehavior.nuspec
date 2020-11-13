@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
+    <id>RetryBehavior</id>
+    <version>1.1.0.0</version>
+    <title>RetryBehavior</title>
     <authors>Christian Guzman</authors>
     <owners>Christian Guzman</owners>
-    <licenseUrl>https://github.com/h-4voK/retry-behavior</licenseUrl>
+    <license type="expression">MIT</license>
     <projectUrl>https://github.com/h-4voK/retry-behavior</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/h-4vok/retry-behavior/master/retry-behavior.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
